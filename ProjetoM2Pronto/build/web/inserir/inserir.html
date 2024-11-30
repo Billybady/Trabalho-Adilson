@@ -1,0 +1,44 @@
+<!-- 
+    Document   : Html
+    Created on : 23 de nov. de 2024, 19:03:44
+    Author     : Breno Barbosa, Felipe Alencar, Gustavo Ferreira Santos, Gustavo Silva-->
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Controle de Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style2.css">
+    </head>
+    <body>
+        <div class="containerInserir">
+            <div class="titulo">
+                <h1>Adicionar Cliente</h1>
+            </div>
+            <form action="inserir.jsp" method="post">
+                <label>CPF:</label><input type="text" name="cpf"><br>
+                <label>Nome:</label><input type="text" name="nome"><br>
+                <label>Email:</label><input type="email" name="email"><br>
+                <label>Telefone:</label><input type="text" name="telefone"><br>
+                <label>Endereço:</label><input type="text" name="endereco"><br>
+                <label>Problema:</label><textarea name="problema"></textarea><br>
+                <label>Situação:</label>
+                <select name="situacao">
+                    <option>Resolvido</option>
+                    <option>Em andamento</option>
+                    <option>Não solucionado</option>
+                </select><br>
+                <button type="submit">Cadastrar</button>
+            </form>  
+            <form method="post" action="../gerenciar.jsp">       
+                <button type="submit">Voltar</button>
+            </form>
+        </div>
+       
+    </body>
+</html>
+

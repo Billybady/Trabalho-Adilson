@@ -1,0 +1,33 @@
+<!-- 
+    Document   : excluir
+    Created on : 23 de nov. de 2024, 19:03:44
+    Author     : Breno Barbosa, Felipe Alencar, Gustavo Ferreira Santos, Gustavo Silva-->
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style2.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Excluir Cliente</h1>
+            <div class="ex">
+                <form method="post" action="excluir.jsp">
+                    <label>Insira o ID do Cliente:</label>
+                    <input type="text" name="id" id="id">
+                    <button type="submit">Excluir</button>
+                </form>
+                <form action="../gerenciar.jsp">
+                    <button type="submit">Voltar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

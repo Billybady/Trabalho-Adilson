@@ -1,0 +1,163 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background: linear-gradient(to bottom, black, rgb(126, 29, 29), black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna e limpa */
+    background-color: #f4f6f9; /* Fundo claro e suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.8rem; /* Tamanho maior para destaque */
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 700; /* Aumenta a força do título */
+    letter-spacing: 1px; /* Espaçamento de letras para melhor legibilidade */
+}
+
+.ex{
+    margin: 0;
+}
+/* Container principal */
+div {
+    width: 100%;
+    max-width: 800px; /* Limita o tamanho do formulário em telas grandes */
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    box-sizing: border-box;
+}
+
+.container{
+        width: 100%;
+    max-width: 800px; /* Limita o tamanho do formulário em telas grandes */
+    margin: 20px auto;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    box-sizing: border-box;
+}
+
+/* Estilo dos labels */
+label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600; /* Destaca os labels */
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"], input[type="number"], input[type="email"], input[type="date"] {
+    padding: 14px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito de foco nos campos de entrada */
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+    border-color: #3498db; /* Cor de borda quando focado */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.6); /* Sombra suave no foco */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Estilo do botão */
+button {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #ff0000;
+    transform: translateY(-2px); /* Efeito de leve movimento ao passar o mouse */
+}
+
+/* Botão "Voltar" com cor diferenciada */
+form button[type="submit"]:nth-of-type(2) {
+    background-color: #16a085; /* Cor verde suave */
+}
+
+/* Efeito de hover para o botão "Voltar" */
+form button[type="submit"]:nth-of-type(2):hover {
+    background-color: #1abc9c; /* Verde mais intenso no hover */
+    transform: translateY(-2px);
+}
+
+/* Estilos para mensagens */
+.message {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Mensagens de erro */
+.message.error {
+    color: white; /* Vermelho claro para erro */
+}
+
+/* Mensagens de sucesso */
+.message.success {
+    color: white; /* Verde para sucesso */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    div {
+        width: 90%; /* Aumenta a largura do formulário em telas menores */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Diminui o tamanho do título em dispositivos pequenos */
+    }
+
+    input[type="text"], input[type="number"], input[type="email"], input[type="date"] {
+        padding: 12px; /* Menos padding para campos em telas pequenas */
+    }
+
+    button {
+        font-size: 1rem; /* Ajusta o tamanho do botão */
+    }
+}
+
+body select {
+    padding: 14px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}

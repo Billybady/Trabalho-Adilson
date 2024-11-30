@@ -1,0 +1,56 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+
+header {
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ background: #fff;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ margin: 0;
+ padding: 0;
+ left: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, black, rgb(126, 29, 29), black);
+    font-family: sans-serif;
+    background-color: #f4f6f9; /* Fundo claro e suave */
+    color: white; /* Texto escuro para bom contraste */
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1{
+    margin-left:200px; 
+}
+
+button {
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    width: 25%;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #ff0000;
+    transform: translateY(-2px);
+}
+
+
